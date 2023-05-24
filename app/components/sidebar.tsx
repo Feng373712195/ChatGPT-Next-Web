@@ -119,9 +119,9 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>因联云ChatGPT</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          训练ChatGPT模型、ChatGPT软件开发
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -174,7 +174,8 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
+            {/* REPO_URL */}
+            <a href={"https://www.yinlian.pro"} target="_blank">
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div>

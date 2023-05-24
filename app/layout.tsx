@@ -7,8 +7,8 @@ import { getBuildConfig } from "./config/build";
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "ChatGPT Next Web",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "因联云ChatGPT",
+  description: "训练ChatGPT模型、ChatGPT软件开发",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -19,7 +19,7 @@ export const metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "ChatGPT Next Web",
+    title: "因联云ChatGPT",
     statusBarStyle: "default",
   },
 };
@@ -33,7 +33,16 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="version" content={buildConfig.commitId} />
+        <meta
+          name="keywords"
+          content="ChatGPT开发、ChatGPT模型训练、ChatGPT软件开发"
+        />
         <link rel="manifest" href="/site.webmanifest"></link>
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="/yinlian-favicon.ico"
+        />
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>{children}</body>

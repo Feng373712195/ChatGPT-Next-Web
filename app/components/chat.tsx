@@ -761,7 +761,20 @@ export function Chat() {
                 <div className={styles["chat-message-container"]}>
                   <div className={styles["chat-message-avatar"]}>
                     {message.role === "user" ? (
-                      <Avatar avatar={config.avatar} />
+                      // <Avatar avatar={config.avatar} />
+                      <div
+                        style={{ overflow: "hidden" }}
+                        className="user-avatar"
+                      >
+                        <img
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            background: "rgb(31, 148, 140)",
+                          }}
+                          src={"https://www.yinlian.pro/images/yl-logo.png"}
+                        />
+                      </div>
                     ) : (
                       <MaskAvatar mask={session.mask} />
                     )}

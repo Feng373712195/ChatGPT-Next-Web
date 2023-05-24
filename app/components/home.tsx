@@ -129,6 +129,12 @@ function Screen() {
           <Route path={Path.Chat} element={<Chat />} />
           <Route path={Path.Settings} element={<Settings />} />
         </Routes>
+
+        {!config.tightBorder ? (
+          <footer className="layout-footer">
+            因联云可提供ChatGPT、百度文心一言、阿里通义千问、商汤商量的GPT开发
+          </footer>
+        ) : null}
       </div>
     </div>
   );
